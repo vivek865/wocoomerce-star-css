@@ -3,8 +3,8 @@ If you want to show stars instead of theme ratings in Woocommerce, you can do th
 The Stars rating is the default rating system in WooCommerce, so to match the rating system with themes we have to disable this default rating first then replace this with the WooCommerce default. you can get it from “plugins/WooCommerce/assets/images” directly and place it in your themes “images” folder star.
 Now add the below code to your custom.css (if you have style.css as a child theme):
 
-.star-rating{float:right;width:85px;height:20px;background:url(images/star.png) repeat-x left 0} 
-.star-rating span{background:url(images/star.png) repeat-x left -35px;height:0;padding-top:20px;overflow:hidden;float:left} 
+.star-rating{float:right;width:80px;height:16px;background:url(images/star.png) repeat-x left 0} 
+.star-rating span{background:url(images/star.png) repeat-x left -35px;height:0;padding-top:20px;margin-top: 2px;overflow:hidden;float:left} 
 .hreview-aggregate .star-rating{margin:15px 0 0 0} 
 #review_form #respond{position:static;margin:0;width:auto;padding:0 0 0;background:transparent none;border:0} 
 #review_form #respond:after{content:"";display:block;clear:both} 
@@ -12,15 +12,15 @@ Now add the below code to your custom.css (if you have style.css as a child them
 #review_form #respond .form-submit input{left:auto} 
 #review_form #respond textarea{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100%} 
 p.stars:after{content:"";display:block;clear:both} 
-p.stars span{width:85px;height:20px;position:relative;float:left;background:url(images/star.png) repeat-x left 0} 
-p.stars span a{float:left;position:absolute;left:0;top:0;width:20px;height:0;padding-top:20px;overflow:hidden} 
-p.stars span a:hover,p.stars span a:focus{background:url(images/star.png) repeat-x left -20px} 
-p.stars span a.active{background:url(images/star.png) repeat-x left -35px} 
-p.stars span a.star-1{width:20px;z-index:10} 
-p.stars span a.star-2{width:35px;z-index:9} 
-p.stars span a.star-3{width:50px;z-index:8} 
+p.stars span{width:80px;height:16px;position:relative;float:left;background:url(images/star.png) repeat-x left 0} 
+p.stars span a{float:left;position:absolute;left:0;top:0;width:20px;height:0;padding-top:16px;overflow:hidden} 
+p.stars span a:hover,p.stars span a:focus{background:url(images/star.png) repeat-x left -17px} 
+p.stars span a.active{background:url(images/star.png) repeat-x left -32px} 
+p.stars span a.star-1{width:17px;z-index:10} 
+p.stars span a.star-2{width:33px;z-index:9} 
+p.stars span a.star-3{width:49px;z-index:8} 
 p.stars span a.star-4{width:65px;z-index:7} 
-p.stars span a.star-5{width:85px;z-index:6}
+p.stars span a.star-5{width:80px;z-index:6}
 
 
 //
